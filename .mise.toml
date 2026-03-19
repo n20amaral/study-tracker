@@ -1,0 +1,16 @@
+[tools]
+pre-commit = "latest"
+python = "3.13"
+uv = "latest"
+
+[settings]
+python.uv_venv_auto = true
+idiomatic_version_file_enable_tools = ["python"]
+experimental = true
+
+[env]
+APP_REPO = 'study-tracker'
+GITOPS_REPO = 'study-tracker-gitops'
+
+[hooks]
+enter = "bash ./scripts/setup && bash ./scripts/setup_project"
