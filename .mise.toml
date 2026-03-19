@@ -7,10 +7,21 @@ uv = "latest"
 python.uv_venv_auto = true
 idiomatic_version_file_enable_tools = ["python"]
 experimental = true
+auto_install = true
 
 [env]
 APP_REPO = 'study-tracker'
 GITOPS_REPO = 'study-tracker-gitops'
 
+
 [hooks]
-enter = "bash ./scripts/setup && bash ./scripts/setup_project"
+enter = """
+mise install
+mise reshim
+git config --global push.autoSetupRemote true
+git config --global --add safe.directory /workspaces/study-tracker
+mise exec -- pip install --user pipx
+mise exec -- pipx install commitizen
+mise exec -- pre-commit install
+mise exec -- pre-commit install --hook-type commit-msg
+"""

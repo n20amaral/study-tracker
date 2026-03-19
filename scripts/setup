@@ -1,9 +1,0 @@
-#!/bin/bash
-echo ""
-echo "."
-echo ".."
-echo "..."
-echo ".."
-echo "."
-echo ""
-$HOME/.local/bin/mise trust /workspaces/"$DEVPOD_WORKSPACE_ID"/.mise.toml && $HOME/.local/bin/mise install
