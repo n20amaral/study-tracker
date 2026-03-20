@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/n20amaral/study-tracker/compare/backend-v0.1.0...backend-v0.2.0) (2026-03-20)
+
+
+### Features
+
+* **backend:** removed gha trigger marker comment ([#9](https://github.com/n20amaral/study-tracker/issues/9)) ([2255569](https://github.com/n20amaral/study-tracker/commit/22555691de1c961b18d84e556ab8b7d1aa98e6c7))
+
 ## 0.1.0 (2026-03-20)
 
 
