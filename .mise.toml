@@ -2,6 +2,7 @@
 pre-commit = "latest"
 python = "3.13"
 uv = "latest"
+trivy = "0.69.3"
 
 [settings]
 python.uv_venv_auto = true
