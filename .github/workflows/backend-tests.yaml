@@ -74,16 +74,15 @@ jobs:
           recreate: true
           path: code-coverage-results.md
 
-      - name: Build Docker image
-        run: docker build -t backend-app:latest .
+      - name: Build an image from Dockerfile
+        run: docker build -t backend-app:${{ github.sha }} .
 
       - name: Run Trivy vulnerability scanner
-        uses: aquasecurity/trivy-action@0.33.1
+        uses: aquasecurity/trivy-action@0.35.0
         with:
-          image-ref: "backend-app:latest"
+          image-ref: "backend-app:${{ github.sha }}"
           format: "table"
           exit-code: "0"
-          # exit-code: '1' # Fail the workflow if vulnerabilities are found.
           ignore-unfixed: true
           vuln-type: "os,library"
           severity: "CRITICAL,HIGH"
