@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/n20amaral/study-tracker/compare/frontend-v0.1.0...frontend-v0.2.0) (2026-03-20)
+
+
+### Features
+
+* **frontend:** normalize version for frontend ([#13](https://github.com/n20amaral/study-tracker/issues/13)) ([aab2a02](https://github.com/n20amaral/study-tracker/commit/aab2a0287068ebca36a0678ce2306107251fb8d9))
+
 ## 0.1.0 (2026-03-20)
 
 
