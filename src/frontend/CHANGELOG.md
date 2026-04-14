@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://github.com/n20amaral/study-tracker/compare/frontend-v0.2.1...frontend-v0.3.0) (2026-04-14)
+
+
+### Features
+
+* **fronted/backend:** version bump ([#20](https://github.com/n20amaral/study-tracker/issues/20)) ([5f96f03](https://github.com/n20amaral/study-tracker/commit/5f96f03dbee89c12efd14b4e6aa714f95192b9dc))
+
 ## [0.2.1](https://github.com/n20amaral/study-tracker/compare/frontend-v0.2.0...frontend-v0.2.1) (2026-04-14)
 
 
